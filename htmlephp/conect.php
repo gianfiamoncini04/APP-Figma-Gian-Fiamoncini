@@ -1,6 +1,6 @@
 <?php
 
-    $server = "localhost:3307";
+    $server = "localhost:3306";
     $user = "root";
     $password = "";
     $db = "banco_figma_gian";
@@ -10,5 +10,3 @@
     // if (!$conn) {
     // die("Connection failed: " . mysqli_connect_error());
     // }
-
-?>

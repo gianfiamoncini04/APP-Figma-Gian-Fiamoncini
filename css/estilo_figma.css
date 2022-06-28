@@ -1,6 +1,6 @@
 /* Início barra entalhe no topo em todas as telas */
 
-#entalhe{
+/* #entalhe{
     background-color: #bdbdbd;
     position: fixed;
     top: 0;
@@ -9,7 +9,7 @@
     height: 70px;
     display: flex;
     flex-direction: row;
-}
+} */
 
 #hora{
     font-family: 'Noto Sans', sans-serif;
@@ -456,13 +456,15 @@ h1{
 
 /* Início do entalhe menu no fundo de todas as telas (inicio,sabores,pedidos,perfil)*/
 
-#cabecalho{
+.cabecalho{
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
+    /* padding: 0 0; */
     width: 100%;
-    margin-left: -40px;
+    /* margin-left: -30px; */
+    border-top: 3pt solid rgb(0, 0, 0);
 }
 
 .menu{
@@ -473,12 +475,13 @@ h1{
     list-style: none;
     text-align: center;
     gap: 10px;
-    border-top: 3pt solid rgb(0, 0, 0);
     width: 100%;
     margin-top: 50px;
     background-color:  rgb(255, 255, 255);
     font-family: 'Bebas Neue', cursive;
     font-size: 200%;
+    padding-left: 0;
+
 }
 
 .menu li {
@@ -525,13 +528,13 @@ h1{
 
 #subentalhe{
     background-color: rgba(190, 148, 148, 1);
-    background-image: url('fundologin.png');
+    background-image: url('../imgs/fundologin.png');
     position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: 70px;
+    top: 0;
     left: 0;
     right: 0;
     height: 150px;
@@ -1189,7 +1192,7 @@ h1{
 /* inicio botões e textos da tela perfil */
 
 #perfil{
-    background-color: #bdbdbd60;
+    background-color: #ebebeb87;
     position: fixed;
     display: flex;
     flex-direction: row;
@@ -1222,6 +1225,8 @@ h1{
     position: fixed;
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
     justify-content: center;
     align-items: center;
     top: 25%;
@@ -1230,39 +1235,16 @@ h1{
     width: 100%;
 }
 
-#config{
-    background-image: linear-gradient( to bottom, rgba(190, 148, 148, 1), rgba(190, 148, 148, 0));
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    width: 100%;
-    border-bottom: #000000 solid 2pt;
-}
-
-.config_logo{
-    width: 100px;
-    height: 100px;
-    left: 80px;
-}
-
-.config_texto{
-    left: 200px;
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 50px;
-    color: rgb(0, 0, 0);
-}
-
 
 #chat{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 50px;
     width: 100%;
     border-bottom: #000000 solid 2pt;
+    padding-left: 35%;
 }
 
 .chat_logo{
@@ -1281,11 +1263,12 @@ h1{
 #sino{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 50px;
     width: 100%;
     border-bottom: #000000 solid 2pt;
+    padding-left: 35%;
 }
 
 .sino_logo{
@@ -1304,11 +1287,12 @@ h1{
 #carteira{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 50px;
     width: 100%;
     border-bottom: #000000 solid 2pt;
+    padding-left: 35%;
 }
 
 .carteira_logo{
@@ -1327,11 +1311,13 @@ h1{
 #cupom{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 50px;
     width: 100%;
     border-bottom: #000000 solid 2pt;
+    padding-left: 35%;
+
 }
 
 .cupom_logo{
@@ -1350,11 +1336,12 @@ h1{
 #fidelidade{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 50px;
     width: 100%;
     border-bottom: #000000 solid 2pt;
+    padding-left: 35%;
 }
 
 .fidelidade_logo{
@@ -1373,11 +1360,12 @@ h1{
 #favoritos{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 50px;
     width: 100%;
     border-bottom: #000000 solid 2pt;
+    padding-left: 35%;
 }
 
 .favoritos_logo{
@@ -1399,10 +1387,8 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 650px;
-    height: 150px;
-    margin-top: 140%;
-    margin-left: 15%;
+    padding-left: 50%;
+    padding-top: 83vh;
 }
 
 
@@ -1417,18 +1403,24 @@ h1{
     align-items: center;
     width: 400px;
     height: 100px;
-    top: 83%;
     font-family: 'Noto Sans', sans-serif;
     font-size: 50px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 .sair_logo{
     position: absolute;
     width: 70px;
     height: 70px;
-    left: 150px;
-    top: 310px;
+    padding-right: 50%;
+}
+
+.text_sair {
+    padding-left: 10vh;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 50px;
+    color: rgb(255 255 255);
+    font-weight: 100;
 }
 
 /* termino botões e textos da tela perfil */
