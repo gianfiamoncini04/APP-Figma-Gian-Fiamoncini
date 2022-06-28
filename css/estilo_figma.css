@@ -1,0 +1,1434 @@
+/* Início barra entalhe no topo em todas as telas */
+
+#entalhe{
+    background-color: #bdbdbd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+}
+
+#hora{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content:  start;
+    align-items: flex-start;
+    margin-top: 7px;
+    margin-left: 10px;
+}
+
+.iconsignal{
+    display: flex;
+    flex-direction: row;
+    justify-content:  start;
+    align-items: flex-start;
+    margin-top: 7px;
+    margin-left: 650px;
+}
+
+.iconwifi{
+    display: flex;
+    flex-direction: row;
+    justify-content:  start;
+    align-items: flex-start;
+    margin-top: 7px;
+    margin-left: 10px;
+}
+
+.iconbattery{
+    display: flex;
+    flex-direction: row;
+    justify-content:  start;
+    align-items: flex-start;
+    margin-top: 7px;
+    margin-left: 10px;
+}
+
+/* Término da barra entalhe no topo em todas as telas */
+
+/* Início do fundo da tela login  */
+
+.fundologin{
+    background-color: #BE9494;
+    background-image: url('fundologin.png');
+    background-size: 100%;
+    background-blend-mode: overlay;
+    top: 70px;
+    left: 0;
+    right: 0;
+    height: 50%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: #000000 solid 1pt;
+}
+
+.logoempresa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 800px;
+    margin-top: 40px;
+}
+
+h1{
+    font-family: 'Kaushan Script', cursive;
+    color: black;
+    font-size: 110px;
+    margin-top: 10px;
+}
+
+/* Término do fundo da tela login  */
+
+/* Início botões e textos da tela login */
+
+.text_1_login{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 55%;
+    left: 100px;
+    /* width: 100%;
+    height: 115%; */
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 55px;
+    font-weight: bolder;
+    color: black;
+}
+
+#fundo_login_login{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 40px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 55%;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+}
+
+.cadastro_body_login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+}
+
+
+
+#email_struct_login{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    border: 5pt rgb(145, 86, 86) solid;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.icon_email_login{
+    width: 90px;
+    height: 90px;
+}
+
+#senha_struct_login{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    border: 5pt rgb(145, 86, 86) solid;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.icon_senha_login{
+    width: 90px;
+    height: 90px;
+}
+
+
+
+#email_usuario_login{
+    width: 550px;
+    height: 50px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 5px solid rgb(0, 0, 0);
+    font-size: 45px;
+    font-size-adjust: initial;
+
+}
+
+#senha_usuario_login{
+    width: 550px;
+    height: 50px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 5px solid rgb(0, 0, 0);
+    font-size: 45px;
+    font-size-adjust: initial;
+}
+
+
+#botao_register_login{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+#register_login{
+    width: 400px;
+    height: 80px;
+    border: 5pt solid rgb(145, 86, 86);
+    background-color: rgba(161, 121, 121, 0.918);
+    border-radius: 15px;
+    color: white;
+    font-size: 40px;
+    font-size-adjust: initial;
+    font-weight: bolder; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+#nadaver{
+    width: 400px;
+    height: 80px;
+    border: 5pt solid rgb(145, 86, 86);
+    background-color: rgba(161, 121, 121, 0.918);
+    border-radius: 15px;
+    color: white;
+    font-size: 40px;
+    font-size-adjust: initial;
+    font-weight: bolder; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+
+.help{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 96.8%;
+    left: 0;
+    right: 0;
+    /* width: 100%;
+    height: 180%; */
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 35px;
+    font-weight: bolder;
+    color: rgba(4, 100, 194, 1);
+}
+
+/* Término botões e textos da tela login */
+
+/* Começo tela cadastro */
+
+#fundo_cadastro{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 40px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 20%;
+    left: 0;
+    right: 0;
+    bottom: 120px;
+    /* border: 5pt solid rgb(145, 86, 86); */
+}
+
+.cadastro_body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+}
+
+#name_struct{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    border: 5pt rgb(145, 86, 86) solid;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.icon_name{
+    width: 90px;
+    height: 90px;
+    
+}
+
+#fone_struct{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    border: 5pt rgb(145, 86, 86) solid;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.icon_fone{
+    width: 90px;
+    height: 90px;
+}
+
+
+#email_struct{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    border: 5pt rgb(145, 86, 86) solid;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.icon_email{
+    width: 90px;
+    height: 90px;
+}
+
+#senha_struct{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    border: 5pt rgb(145, 86, 86) solid;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.icon_senha{
+    width: 90px;
+    height: 90px;
+}
+
+#endereço_struct{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    border: 5pt rgb(145, 86, 86) solid;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.icon_endereço{
+    width: 90px;
+    height: 90px;
+}
+
+#nome_usuario{
+    width: 550px;
+    height: 50px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 5px solid rgb(0, 0, 0);
+    font-size: 45px;
+    font-size-adjust: initial;
+}
+
+#telefone_usuario{
+    width: 550px;
+    height: 50px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 5px solid rgb(0, 0, 0);
+    font-size: 45px;
+    font-size-adjust: initial;
+
+}
+
+#email_usuario{
+    width: 550px;
+    height: 50px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 5px solid rgb(0, 0, 0);
+    font-size: 45px;
+    font-size-adjust: initial;
+
+}
+
+#senha_usuario{
+    width: 550px;
+    height: 50px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 5px solid rgb(0, 0, 0);
+    font-size: 45px;
+    font-size-adjust: initial;
+}
+
+#endereco_usuario{
+    width: 550px;
+    height: 50px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 5px solid rgb(0, 0, 0);
+    font-size: 45px;
+    font-size-adjust: initial;
+}
+
+#botao_register{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#register{
+    width: 400px;
+    height: 80px;
+    border: 5pt solid rgb(145, 86, 86);
+    background-color: rgba(161, 121, 121, 0.918);
+    border-radius: 15px;
+    color: white;
+    font-size: 40px;
+    font-size-adjust: initial;
+    font-weight: bolder; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.titulo_cadastro{
+    position: absolute;
+    font-size: 75px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    left: 300px;
+    right: 0;
+    top: 13%;
+    font-size-adjust: initial;
+}
+
+/* Término tela cadastro */
+
+/* Início do entalhe menu no fundo de todas as telas (inicio,sabores,pedidos,perfil)*/
+
+#cabecalho{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin-left: -40px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    gap: 10px;
+    border-top: 3pt solid rgb(0, 0, 0);
+    width: 100%;
+    margin-top: 50px;
+    background-color:  rgb(255, 255, 255);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 200%;
+}
+
+.menu li {
+    gap: 80px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.logo_menu_inicio{
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+.logo_menu_sabores{
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+.logo_menu_pedidos{
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+.logo_menu_perfil{
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Término do entalhe menu no fundo de todas as telas (inicio,sabores,pedidos,perfil)*/
+
+/* Início  sub entalhe no topo de todas as telas (inicio,sabores,pedidos,perfil)*/
+
+#subentalhe{
+    background-color: rgba(190, 148, 148, 1);
+    background-image: url('fundologin.png');
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 70px;
+    left: 0;
+    right: 0;
+    height: 150px;
+    border: #000000 solid 1pt;
+}
+
+.subtitulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 90px;
+    font-family: 'Kaushan Script', cursive;
+    color: black;
+}
+
+/* Término  sub entalhe no topo de todas as telas (inicio,sabores,pedidos,perfil)*/
+
+/* Início botões e textos da tela inicio */
+
+#linhas_inicio{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content:  center;
+    top: 12%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    gap: 50px;
+}
+
+#linha_1_inicio{
+    margin-top: -50px;
+    height: 100%;
+    width: 100%;
+}
+
+.texto_pequena{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 50px;
+    font-weight:  bolder;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pizza_pequena{
+    margin-left: 60%;
+    width: 350px;
+    height: 210px;
+}
+
+.botao_pequena{
+    width: 300px;
+    height: 100px;
+    border: rgba(0, 100, 250, 0.73) solid 2pt;
+    border-radius: 50px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 100, 250, 0.73);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-right: 65%;
+    margin-top: -12%;
+
+}
+
+#linha_2_inicio{
+    border-top: 3pt solid black;
+    width: 100%;
+}
+
+.texto_media{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 50px;
+    font-weight:  bolder;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pizza_media{
+    margin-right: 60%;
+    width: 350px;
+    height: 170px;
+}
+
+.botao_media{
+    width: 300px;
+    height: 100px;
+    border: rgba(0, 100, 250, 0.73) solid 2pt;
+    border-radius: 50px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 100, 250, 0.73);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-left: 60%;
+    margin-top: -12%;
+}
+
+#linha_3_inicio{
+    border-top: 3pt solid black;
+    width: 100%;
+}
+
+.texto_grande{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 50px;
+    font-weight:  bolder;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pizza_grande{
+    margin-left: 60%;
+    width: 350px;
+    height: 214px;
+}
+
+.botao_grande{
+    width: 300px;
+    height: 100px;
+    border: rgba(0, 100, 250, 0.73) solid 2pt;
+    border-radius: 50px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 100, 250, 0.73);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-right: 65%;
+    margin-top: -12%;
+}
+
+#linha_4_inicio{
+    border-top: 3pt solid #000000;
+    width: 100%;
+}
+
+.texto_gigante{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 50px;
+    font-weight:  bolder;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pizza_gigante{
+    margin-right: 60%;
+    width: 350px;
+    height: 258px;
+}
+
+.botao_gigante{
+    width: 300px;
+    height: 100px;
+    border: rgba(0, 100, 250, 0.73) solid 2pt;
+    border-radius: 50px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 100, 250, 0.73);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-left: 60%;
+    margin-top: -20%;
+}
+
+/* Término botões e textos da tela login */
+
+/* Inicio botões e textos da tela sabores */
+
+#div_sabores{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    top: 15%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    gap: 100px;
+}
+
+#coluna_1_sabores{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 460px;
+}
+
+.pizza_calabresa{
+    width: 350px;
+    height: 300px;
+    border: solid 2pt black;
+    border-width: 10px;
+    gap: 100px;
+}
+
+.pizza_vegana{
+    width: 350px;
+    height: 300px;
+    border: solid 2pt black;
+    border-width: 10px;
+    gap: 100px;
+}
+
+.titulo_calabresa{
+    color: rgba(153, 112, 112, 1);
+    font-size: 40px;
+    font-weight: bolder;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    width: 95px;
+    height: 22px;
+    left: 70px;
+    top: 350px;
+    gap: 100px;
+}
+
+.titulo_vegana{
+    color: rgba(153, 112, 112, 1);
+    font-size: 40px;
+    font-weight: bolder;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    width: 95px;
+    height: 22px;
+    left: 70px;
+    top: 1120px;
+    gap: 100px;
+}
+
+.subtitulo_calabresa{
+    color: black;
+    font-size: 27px;
+    font-weight: bold;
+    position: absolute;
+    width: 350px;
+    height: 300px;
+    left: 70px;
+    top: 400px;
+    gap: 100px;
+}
+
+.subtitulo_vegana{
+    color: black;
+    font-size: 27px;
+    font-weight: bold;
+    position: absolute;
+    width: 350px;
+    height: 300px;
+    left: 70px;
+    top: 1160px;
+    gap: 100px;
+}
+
+#coluna_2_sabores{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 460px;
+}
+
+.pizza_frango{
+    width: 350px;
+    height: 300px;
+    border: solid 2pt black;
+    border-width: 10px;
+    gap: 100px;
+}
+
+.pizza_egg{
+    width: 350px;
+    height: 300px;
+    border: solid 2pt black;
+    border-width: 10px;
+    gap: 100px;
+}
+
+.titulo_frango{
+    color: rgba(153, 112, 112, 1);
+    font-size: 40px;
+    font-weight: bolder;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    width: 300px;
+    height: 17px;
+    left: 550px;
+    top: 350px;
+    gap: 100px;
+}
+
+.titulo_egg{
+    color: rgba(153, 112, 112, 1);
+    font-size: 40px;
+    font-weight: bolder;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    width: 300px;
+    height: 22px;
+    left: 550px;
+    top: 1120px;
+    gap: 100px;
+}
+
+.subtitulo_frango{
+    color: black;
+    font-size: 27px;
+    font-weight: bold;
+    position: absolute;
+    width: 350px;
+    height: 300px;
+    left: 550px;
+    top: 450px;
+    gap: 100px;
+}
+
+.subtitulo_egg{
+    color: black;
+    font-size: 27px;
+    font-weight: bold;
+    position: absolute;
+    width: 350px;
+    height: 300px;
+    left: 550px;
+    top: 1160px;
+    gap: 100px;
+}
+
+#coletores{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    top: 15%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    gap: 100px;
+}
+
+#coluna_1_coletores{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 460px;
+}
+
+.retangulo_calabresa{
+    position: absolute;
+    width: 250px;
+    height: 110px;
+    left: 135px;
+    top: 580px;
+    border: 2pt solid #000000;
+    box-sizing: border-box;
+}
+
+.menus_calabresa{
+    position: absolute;
+    width: 18.03px;
+    height: 0px;
+    left: 180px;
+    top: 630px;
+    border: 2px solid #000000;
+}
+
+.line2_calabresa{
+    position: absolute;
+    width: 18.03px;
+    height: 0px;
+    left: 315px;
+    top: 630px;
+    border: 2px solid #000000;
+}
+
+.line3_calabresa{
+    position: absolute;
+    width: 18.03px;
+    height: 0px;
+    left: 315px;
+    top: 630px;
+    border: 2px solid #000000;
+    transform: matrix(-0.01, -1, 1, -0.01, 0, 0);
+}
+
+.zero_calabresa{
+    position: absolute;
+    width: 32px;
+    height: 40px;
+    left: 240px;
+    top: 615px;
+}
+
+.retangulo_vegana{
+    position: absolute;
+    width: 250px;
+    height: 110px;
+    left: 135px;
+    top: 1320px;
+    border: 2pt solid #000000;
+    box-sizing: border-box;
+}
+
+.menus_vegana{
+    position: absolute;
+    width: 18.03px;
+    height: 0px;
+    left: 180px;
+    top: 1375px;
+    border: 2px solid #000000;
+}
+
+.line2_vegana{
+    position: absolute;
+    width: 15px;
+    height: 0px;
+    left: 310px;
+    top: 1375px;
+    border: 2px solid #000000;
+}
+
+.line3_vegana{
+    position: absolute;
+    width: 15.03px;
+    height: 0px;
+    left: 310px;
+    top: 1375px;
+    border: 2px solid #000000;
+    transform: matrix(-0.01, -1, 1, -0.01, 0, 0);
+}
+
+.zero_vegana{
+    position: absolute;
+    width: 32px;
+    height: 40px;
+    left: 240px;
+    top: 1355px;
+}
+
+#coluna_2_coletores{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 460px;
+}
+
+.retangulo_frango{
+    position: absolute;
+    width: 250px;
+    height: 110px;
+    left: 600px;
+    top: 870px;
+    border: 2pt solid #000000;
+    box-sizing: border-box;
+}
+
+.menus_frango{
+    position: absolute;
+    width: 18.03px;
+    height: 0px;
+    left: 650px;
+    top: 920px;
+    border: 2px solid #000000;
+}
+
+.line2_frango{
+    position: absolute;
+    width: 15px;
+    height: 0px;
+    left: 790px;
+    top: 920px;
+    border: 2px solid #000000;
+}
+
+.line3_frango{
+    position: absolute;
+    width: 15.03px;
+    height: 0px;
+    left: 790px;
+    top: 920px;
+    border: 2px solid #000000;
+    transform: matrix(-0.01, -1, 1, -0.01, 0, 0);
+}
+
+.zero_frango{
+    position: absolute;
+    width: 32px;
+    height: 40px;
+    left: 710px;
+    top: 900px;
+}
+
+.retangulo_egg{
+    position: absolute;
+    width: 250px;
+    height: 110px;
+    left: 600px;
+    top: 1615px;
+    border: 2pt solid #000000;
+    box-sizing: border-box;
+}
+
+.menus_egg{
+    position: absolute;
+    width: 18.03px;
+    height: 0px;
+    left: 650px;
+    top: 1670px;
+    border: 2px solid #000000;
+}
+
+.line2_egg{
+    position: absolute;
+    width: 15px;
+    height: 0px;
+    left: 790px;
+    top: 1670px;
+    border: 2px solid #000000;
+}
+
+.line3_egg{
+    position: absolute;
+    width: 15.03px;
+    height: 0px;
+    left: 790px;
+    top: 1670px;
+    border: 2px solid #000000;
+    transform: matrix(-0.01, -1, 1, -0.01, 0, 0);
+}
+
+.zero_egg{
+    position: absolute;
+    width: 32px;
+    height: 40px;
+    left: 710px;
+    top: 1650px;
+}
+
+/* termino botões e textos da tela sabores */
+
+/* Inicio botões e textos da tela pedidos */
+
+#barra1{
+    position: fixed;
+    background-color: rgba(0, 100, 250, 0.73);
+    top: 15%;
+    left: 0;
+    width: 100%;
+}
+
+.texto1_pedido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 50px;
+    color: white;
+}
+
+#barra2{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 25%;
+    right: 0;
+    left: 0;
+}
+
+.fundo_pedidos{
+    width: 970px;
+}
+
+#barra3{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 75%;
+    right: 0;
+    left: 0;
+}
+
+.texto2_pedido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+    color: rgb(109, 108, 108);
+}
+
+.botao_pedidos{
+    background-color: rgba(0, 100, 250, 0.73);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 700px;
+    height: 100px;
+    top: 150px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+
+/* termino botões e textos da tela pedidos */
+
+/* inicio botões e textos da tela perfil */
+
+#perfil{
+    background-color: #bdbdbd60;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    top: 12%;
+    width: 100%;
+    left: 0;
+    gap: 50px;
+}
+
+.perfil_logo{
+    width: 150px;
+    height: 150px;
+}
+
+.perfil_texto{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.perfil_edit{
+    width: 100px;
+    height: 100px;
+}
+
+#colunas{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 25%;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+#config{
+    background-image: linear-gradient( to bottom, rgba(190, 148, 148, 1), rgba(190, 148, 148, 0));
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    border-bottom: #000000 solid 2pt;
+}
+
+.config_logo{
+    width: 100px;
+    height: 100px;
+    left: 80px;
+}
+
+.config_texto{
+    left: 200px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+}
+
+
+#chat{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    border-bottom: #000000 solid 2pt;
+}
+
+.chat_logo{
+    width: 70px;
+    height: 70px;
+    left: 80px;
+}
+
+.chat_texto{
+    left: 200px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+}
+
+#sino{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    border-bottom: #000000 solid 2pt;
+}
+
+.sino_logo{
+    width: 70px;
+    height: 70px;
+    left: 80px;
+}
+
+.sino_texto{
+    left: 200px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+}
+
+#carteira{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    border-bottom: #000000 solid 2pt;
+}
+
+.carteira_logo{
+    width: 70px;
+    height: 70px;
+    left: 80px;
+}
+
+.carteira_texto{
+    left: 200px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+}
+
+#cupom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    border-bottom: #000000 solid 2pt;
+}
+
+.cupom_logo{
+    width: 70px;
+    height: 70px;
+    left: 80px;
+}
+
+.cupom_texto{
+    left: 200px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+}
+
+#fidelidade{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    border-bottom: #000000 solid 2pt;
+}
+
+.fidelidade_logo{
+    width: 70px;
+    height: 70px;
+    left: 80px;
+}
+
+.fidelidade_texto{
+    left: 200px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+}
+
+#favoritos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    border-bottom: #000000 solid 2pt;
+}
+
+.favoritos_logo{
+    width: 70px;
+    height: 70px;
+    left: 80px;
+}
+
+.favoritos_texto{
+    left: 200px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+}
+
+#sair{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 650px;
+    height: 150px;
+    margin-top: 140%;
+    margin-left: 15%;
+}
+
+
+.botao_sair{
+    background-color: rgba(44, 43, 43, 0.73);
+    border: #000000 solid 1pt;
+    border-radius: 10pt;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 100px;
+    top: 83%;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+
+.sair_logo{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 150px;
+    top: 310px;
+}
+
+/* termino botões e textos da tela perfil */
