@@ -494,33 +494,12 @@ h1{
     font-weight: bolder;
 }
 
-.logo_menu_inicio{
-    width: 100px;
-    height: 100px;
+.iconify{
     display: block;
     margin: 0 auto;
+    color: #000000;
 }
 
-.logo_menu_sabores{
-    width: 100px;
-    height: 100px;
-    display: block;
-    margin: 0 auto;
-}
-
-.logo_menu_pedidos{
-    width: 100px;
-    height: 100px;
-    display: block;
-    margin: 0 auto;
-}
-
-.logo_menu_perfil{
-    width: 100px;
-    height: 100px;
-    display: block;
-    margin: 0 auto;
-}
 
 /* Término do entalhe menu no fundo de todas as telas (inicio,sabores,pedidos,perfil)*/
 
@@ -1244,6 +1223,7 @@ h1{
     gap: 50px;
     width: 100%;
     border-bottom: #000000 solid 2pt;
+    border-top: #000000 solid 2pt;
     padding-left: 35%;
 }
 
@@ -1408,15 +1388,9 @@ h1{
     color: rgb(0, 0, 0);
 }
 
-.sair_logo{
-    position: absolute;
-    width: 70px;
-    height: 70px;
-    padding-right: 50%;
-}
 
 .text_sair {
-    padding-left: 10vh;
+    padding-left: 0vh;
     font-family: 'Noto Sans', sans-serif;
     font-size: 50px;
     color: rgb(255 255 255);
