@@ -70,9 +70,6 @@
     </div>
 
 
-
-    <div class="help">Precisa de ajuda?</div>
-
     <!-- Término botões e textos da tela login -->
 
     <script src="../js/cadastro_figma.js"></script>

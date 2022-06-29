@@ -39,6 +39,7 @@
 
     <div id="fundo_login_login">
 
+
         <form action="logar.php" method="post">
             <div class="cadastro_body_login">
                 <div id="email_struct_login">
@@ -65,7 +66,6 @@
 
     </div>
 
-    <div class="help">Precisa de ajuda?</div>
 
     <!-- Término botões e textos da tela login -->
 
