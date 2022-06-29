@@ -1171,7 +1171,8 @@ h1{
 /* inicio botões e textos da tela perfil */
 
 #perfil{
-    background-color: #ebebeb87;
+    background-color: #cbc9c987;
+    border-radius: 30px;
     position: fixed;
     display: flex;
     flex-direction: row;
