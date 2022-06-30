@@ -29,18 +29,9 @@
 
 
     if($logar == 'Logar'){
-        $res_inserir = "SELECT email_usuario, senha_usuario FROM usuario WHERE email_usuario= '".$email."' AND senha_usuario= '".$password."' ";
+        $res_inserir = "SELECT email_usuario, senha_usuario FROM usuario WHERE email_usuario= $email AND senha_usuario= $password ";
         $resposta_inserir = mysqli_query($conn,$res_inserir);
         echo "Logado <br/><br/>";
     }
 
     header("Location: inicio_figma_html.php");
-
-?>
-
-
-
-
-
-
-    
