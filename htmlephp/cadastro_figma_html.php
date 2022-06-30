@@ -60,12 +60,12 @@
             </div>
 
             <div id="botao_register">
-                <button id="register" type="submit" name="cadastrar" value="Cadastrar">CADASTRAR</button>
+                <button id="register" type="submit" name="cadastrar" value="Cadastrar">Cadastrar</button>
             </div>
 
         </form>
         <div>
-            <button id="nadaver" onclick="location.href='login_figma_html.php'">VOLTAR AO LOGIN</button><br><br>
+            <button id="nadaver" onclick="location.href='login_figma_html.php'">Voltar ao login</button><br><br>
         </div>
     </div>
 

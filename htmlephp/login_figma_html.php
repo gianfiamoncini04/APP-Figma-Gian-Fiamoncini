@@ -44,24 +44,24 @@
             <div class="cadastro_body_login">
                 <div id="email_struct_login">
                     <img src="../imgs/icon_email.png" class="icon_email">
-                    <input type="text" name="email_usuario_login" id="email_usuario_login" placeholder="EMAIL:"><br><br>
+                    <input type="text" name="email_usuario_login" id="email_usuario_login" placeholder="Email:"><br><br>
                     <small id="textEmail_login"></small>
                 </div>
                 <div id="senha_struct_login">
                     <img src="../imgs/icon_senha.png" class="icon_senha">
-                    <input type="text" name="senha_usuario_login" id="senha_usuario_login" placeholder="SENHA:"><br><br>
+                    <input type="text" name="senha_usuario_login" id="senha_usuario_login" placeholder="Senha:"><br><br>
                     <small id="textSenha_login"></small>
                 </div>
             </div>
 
             <div id="botao_register_login">
-                <button id="register_login" type="submit" name="logar" value="Logar">LOGAR</button>
+                <button id="register_login" type="submit" name="logar" value="Logar">Entrar</button>
             </div>
 
         </form>
 
-        <div id="botao_nadaver">
-            <button id="nadaver" onclick="location.href='cadastro_figma_html.php';">CADASTRAR</button>
+        <div id="botao_cadastro_div">
+            <button id="btn_cadastro" onclick="location.href='cadastro_figma_html.php';">Cadastrar</button>
         </div>
 
     </div>

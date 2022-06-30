@@ -1,9 +1,9 @@
 
 
-            const email = document.querySelector('#email_usuario_login')
-            const textEmail = document.querySelector('#textEmail_login')
-            const senha = document.querySelector('#senha_usuario_login')
-            const textSenha = document.querySelector('#textSenha_login')
+            const email = document.getElementById('email_usuario_login')
+            const textEmail = document.getElementById('textEmail_login')
+            const senha = document.getElementById('senha_usuario_login')
+            const textSenha = document.getElementById('textSenha_login')
 
             email.addEventListener('keyup', function () {
                 if(validarEmail(email.value) !== true){
