@@ -2,29 +2,6 @@
 
 include_once('conect.php');
 
-$email = $_REQUEST["email_usuario_login"];
-$senha = $_REQUEST["senha_usuario_login"];
-
-$sql = "select * from usuario where email_usuario= :email and senha_usuario= :senha";
-
-$result = $conexao->prepare($sql);
-$result->bindValue(":email", $email);
-$result->bindValue(":senha", $senha);
-$result->execute();
-
-$qtde = $result->rowCount();
-
-if ($qtde == 1) {
-    session_start();
-    $linha = $result->fetch(PDO::FETCH_ASSOC);
-    $_SESSION["email"] = $linha["email"];
-    $_SESSION["nome"] = $linha["nome"];
-
-    header("location: inicio_figma_html.php");
-} else {
-    header("location: login_figma_html.php?erro=E-mail ou senha invalidos.");
-}
-
 // $email = '';
 // $password = '';
 // $logar = '';
