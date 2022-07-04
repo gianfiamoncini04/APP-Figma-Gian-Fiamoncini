@@ -59,7 +59,6 @@
     background-color: #BE9494;
     background-image: url('../imgs/fundologin.png');
     background-size: 100%;
-    background-blend-mode: overlay;
     top: 0;
     left: 0;
     right: 0;
@@ -70,6 +69,8 @@
     justify-content: center;
     align-items: center;
     border: #000000 solid 1pt;
+    bottom: 0;
+    box-shadow: 0vh;
 }
 
 .logoempresa{
@@ -77,19 +78,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 450px;
-    height: 450px;
+    width: 550px;
+    height: 550px;
     padding-top: 153px;
 }
 
-h1{
+.marca_titulo{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: 'Kaushan Script', cursive;
     color: black;
-    font-size: 85px;
+    font-size: 95px;
     padding-bottom: 135px;
 }
 
@@ -254,13 +255,95 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 5%;
+    margin-top: 1%;
     box-shadow: 3px 3px;
 }
 
 /* Término botões e textos da tela login */
 
 /* Começo tela cadastro */
+
+#resultado_cadastro{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 1828px;
+    width: 100%;
+    padding-bottom: -1px;
+    border: #000000 solid 1pt;
+    background: #225e92;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 37px;
+    text-align: center;
+    display: block;
+}
+
+#cadastro_existe{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 1828px;
+    width: 100%;
+    padding-bottom: -1px;
+    border: #000000 solid 1pt;
+    background: #225e92;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 37px;
+    text-align: center;
+    display: block;
+}
+
+#resultado_login{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000000d4;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_text1{
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.login_text2{
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    border: #ffffff solid 3pt;
+    padding: 15px;
+}
+
+.login_text2:hover{
+    text-decoration: none;
+    color: rgb(100, 100, 100);
+}
+
+.login_text2:focus{
+    text-decoration: none;
+    color: white;
+}
+
+.login_text2:active{
+    text-decoration: none;
+    color: white;
+}
+
 
 #fundo_cadastro{
     font-family: 'Noto Sans', sans-serif;
@@ -270,7 +353,7 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: 20%;
+    top: 25%;
     left: 0;
     right: 0;
     bottom: 120px;
@@ -278,11 +361,15 @@ h1{
 }
 
 .cadastro_body{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 90px;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+    border: solid 1pt black;
+    border-radius: 10px;
 }
 
 #name_struct{
@@ -291,8 +378,6 @@ h1{
     justify-content: center;
     align-items: center;
     gap: 25px;
-    border: 5pt rgb(145, 86, 86) solid;
-    border-radius: 30px;
     padding: 20px;
 }
 
@@ -308,8 +393,6 @@ h1{
     justify-content: center;
     align-items: center;
     gap: 25px;
-    border: 5pt rgb(145, 86, 86) solid;
-    border-radius: 30px;
     padding: 20px;
 }
 
@@ -325,8 +408,6 @@ h1{
     justify-content: center;
     align-items: center;
     gap: 25px;
-    border: 5pt rgb(145, 86, 86) solid;
-    border-radius: 30px;
     padding: 20px;
 }
 
@@ -341,8 +422,6 @@ h1{
     justify-content: center;
     align-items: center;
     gap: 25px;
-    border: 5pt rgb(145, 86, 86) solid;
-    border-radius: 30px;
     padding: 20px;
 }
 
@@ -357,8 +436,6 @@ h1{
     justify-content: center;
     align-items: center;
     gap: 25px;
-    border: 5pt rgb(145, 86, 86) solid;
-    border-radius: 30px;
     padding: 20px;
 }
 
@@ -373,7 +450,7 @@ h1{
     padding: 8px;
     margin-bottom: 10px;
     border-radius: 8px;
-    border: 5px solid rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
     font-size: 45px;
     font-size-adjust: initial;
 }
@@ -384,7 +461,7 @@ h1{
     padding: 8px;
     margin-bottom: 10px;
     border-radius: 8px;
-    border: 5px solid rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
     font-size: 45px;
     font-size-adjust: initial;
 
@@ -396,7 +473,7 @@ h1{
     padding: 8px;
     margin-bottom: 10px;
     border-radius: 8px;
-    border: 5px solid rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
     font-size: 45px;
     font-size-adjust: initial;
 
@@ -408,7 +485,7 @@ h1{
     padding: 8px;
     margin-bottom: 10px;
     border-radius: 8px;
-    border: 5px solid rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
     font-size: 45px;
     font-size-adjust: initial;
 }
@@ -419,7 +496,7 @@ h1{
     padding: 8px;
     margin-bottom: 10px;
     border-radius: 8px;
-    border: 5px solid rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
     font-size: 45px;
     font-size-adjust: initial;
 }
@@ -432,31 +509,86 @@ h1{
 }
 
 #register{
-    width: 400px;
-    height: 80px;
-    border: 5pt solid rgb(145, 86, 86);
-    background-color: rgba(161, 121, 121, 0.918);
+    width: 900px;
+    height: 120px;
+    border: 1pt solid rgb(0, 0, 0);
+    background-color: rgba(212, 211, 211, 0.918);
     border-radius: 15px;
-    color: white;
+    color: rgb(82, 82, 82);
     font-size: 40px;
     font-size-adjust: initial;
-    font-weight: bolder; 
+    font-weight: bolder;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 10%;
+    box-shadow: 3px 3px;
+}
+
+#ou_cadastro{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #0088ff
+}
+
+#ou_login{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #0088ff
+}
+
+#nadaver{
+    width: 900px;
+    height: 120px;
+    border: 1pt solid rgb(0, 0, 0);
+    background-color: rgba(212, 211, 211, 0.918);
+    border-radius: 15px;
+    color: rgb(82, 82, 82);
+    font-size: 40px;
+    font-size-adjust: initial;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    box-shadow: 3px 3px;
 }
 
 .titulo_cadastro{
     position: absolute;
     font-size: 75px;
     font-family: 'Noto Sans', sans-serif;
-    font-weight: bold;
-    left: 300px;
+    font-weight: bolder;
+    left: 0;
     right: 0;
-    top: 13%;
+    top: 9%;
     font-size-adjust: initial;
+    border-bottom: solid black 5pt;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Término tela cadastro */

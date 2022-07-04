@@ -1,61 +1,34 @@
-<button onclick="location.href='login_figma_html.php'">VOLTAR PARA O LOGIN</button><br><br>
-
 <?php
 
-include_once('conect.php');
 
-$name = '';
-$fone = '';
-$email = '';
-$password = '';
-$address = '';
-$cadastrar = '';
-
-if (!empty($_POST['nome_usuario'])) {
-    $name = $_POST['nome_usuario'];
-    // echo "NOME: $name <br/>";
-
-}
-
-if (!empty($_POST['telefone_usuario'])) {
-    $fone = $_POST['telefone_usuario'];
-    // echo "TELEFONE: $fone <br/>";
-
-}
-
-if (!empty($_POST['email_usuario'])) {
-    $email = $_POST['email_usuario'];
-    // echo "EMAIL: $email <br/>";
-
-}
-
-if (!empty($_POST['senha_usuario'])) {
-    $password = $_POST['senha_usuario'];
-    // echo "SENHA: $password <br/>";
-
-}
-
-if (!empty($_POST['endereco_usuario'])) {
-    $address = $_POST['endereco_usuario'];
-    // echo "ENDEREÇO: $address <br/>";
-
-}
-
-if (!empty($_POST['cadastrar'])) {
-    $cadastrar = $_POST['cadastrar'];
-    // echo "CADASTRADO: $cadastrar <br/>";
-}
+session_start();
+include('conect.php');
 
 
-if ($cadastrar == 'Cadastrar') {
-    $res_inserir = "INSERT INTO usuario(nome_usuario, telefone_usuario, email_usuario, senha_usuario, endereco_usuario) 
-        VALUES ('$name', '$fone', '$email', '$password', '$address')";
-    $resposta_inserir = mysqli_query($conn, $res_inserir);
-    header("Location: inicio_figma_html.php");
-} else {
+$name = mysqli_real_escape_string($conn, trim($_POST['nome_usuario']));
+$fone = mysqli_real_escape_string($conn, trim($_POST['telefone_usuario']));
+$email = mysqli_real_escape_string($conn, trim($_POST['email_usuario']));
+$password = mysqli_real_escape_string($conn, trim($_POST['senha_usuario']));
+$address = mysqli_real_escape_string($conn, trim($_POST['endereco_usuario']));
+
+$sql = "SELECT COUNT(*) AS total FROM usuario WHERE email_usuario = '$email'";
+$result = mysqli_query($conn, $sql);
+$row = mysqli_fetch_assoc($result);
+
+if ($row['total'] == 1) {
+    $_SESSION['email_existe'] = true;
     header("Location: cadastro_figma_html.php");
+    exit;
 }
 
+$sql = "INSERT INTO usuario(nome_usuario, telefone_usuario, email_usuario, senha_usuario, endereco_usuario, data_cadastro) 
+        VALUES ('$name', '$fone', '$email', '$password', '$address', NOW())";
 
+if ($conn->query($sql) === TRUE) {
+    $_SESSION['cadastro_efetuado'] = true;
+}
 
-?>
+$conn->close();
+
+header("Location: cadastro_figma_html.php");
+exit;

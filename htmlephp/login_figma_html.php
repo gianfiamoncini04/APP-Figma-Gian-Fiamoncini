@@ -1,3 +1,9 @@
+<?php
+
+error_reporting(E_ERROR | E_PARSE);
+session_start()
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -22,15 +28,28 @@
 
 <body>
 
+
     <!-- Início do fundo da tela login  -->
 
     <div class="fundologin">
         <img class="logoempresa" src="../imgs/logoempresa.png" alt="Pizzaria IQ">
-        <h1>Pizzaria IQ</h1>
+        <h1 class="marca_titulo">Pizzaria IQ</h1>
     </div>
 
 
     <!-- Término do fundo da tela login -->
+
+    <?php
+    if ($_SESSION['login_erro']) :
+    ?>
+        <div id="cadastro_existe">
+            <p>Email ou senha incorretos!</p>
+            <p>Tente novamente</p>
+        </div>
+    <?php
+    endif;
+    unset($_SESSION['login_erro']);
+    ?>
 
     <!-- Início botões e textos da tela login -->
 
@@ -60,11 +79,27 @@
 
         </form>
 
+        <div id="ou_login">Ou, se não possui uma conta:</div>
+
         <div id="botao_cadastro_div">
             <button id="btn_cadastro" onclick="location.href='cadastro_figma_html.php';">Cadastrar</button>
         </div>
 
     </div>
+
+    <?php
+    if ($_SESSION['login_efetuado']) :
+    ?>
+        <div id="resultado_login">
+            <p class="login_text1">LOGIN EFETUADO COM SUCESSO!</p>
+            <a href="inicio_figma_html.php">
+                <p class="login_text2">FAÇA SEU PRIMEIRO PEDIDO</p>
+            </a>
+        </div>
+    <?php
+    endif;
+    unset($_SESSION['login_efetuado']);
+    ?>
 
 
     <!-- Término botões e textos da tela login -->

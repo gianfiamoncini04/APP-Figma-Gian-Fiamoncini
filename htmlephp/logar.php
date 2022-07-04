@@ -1,37 +1,26 @@
 <?php
 
-include_once('conect.php');
+session_start();
+include('conect.php');
 
-// $email = '';
-// $password = '';
-// $logar = '';
-
-
-// if (!empty($_POST['email_usuario_login'])) {
-//     $email = $_POST['email_usuario_login'];
-//     // echo "EMAIL: $email <br/>";
-
-// }
-
-// if (!empty($_POST['senha_usuario_login'])) {
-//     $password = $_POST['senha_usuario_login'];
-//     // echo "SENHA: $password <br/>";
-
-// }
+$email = mysqli_real_escape_string($conn, trim($_POST['email_usuario_login']));
+$password = mysqli_real_escape_string($conn, trim($_POST['senha_usuario_login']));
 
 
-// if (!empty($_POST['logar'])) {
-//     $logar = $_POST['logar'];
-//     // echo "CADASTRADO: $logar <br/>";
-// }
+$sql = "SELECT COUNT(*) AS total FROM usuario WHERE email_usuario = '$email' AND senha_usuario = '$password'";
+$result = mysqli_query($conn, $sql);
+$row = mysqli_fetch_assoc($result);
+
+if ($row['total'] == 1) {
+    $_SESSION['login_efetuado'] = true;
+    header("Location: login_figma_html.php");
+    exit;
+} else {
+    $_SESSION['login_erro'] = true;
+}
 
 
+$conn->close();
 
-// if ($logar == 'Logar') {
-//     $res_inserir = "SELECT email_usuario, senha_usuario FROM usuario WHERE email_usuario= '$email' AND senha_usuario= '$password' ";
-//     $resposta_inserir = mysqli_query($conn, $res_inserir);
-//     echo "Logado <br/><br/>";
-//     header("Location: inicio_figma_html.php");
-// } else {
-//     header("Location: login_figma_html.php");
-// }
+header("Location: login_figma_html.php");
+exit;
