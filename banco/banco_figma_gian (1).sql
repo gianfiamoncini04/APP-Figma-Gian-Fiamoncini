@@ -2,10 +2,10 @@
 -- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1:3307
--- Tempo de geração: 09-Jun-2022 às 15:46
--- Versão do servidor: 10.4.22-MariaDB
--- versão do PHP: 8.1.2
+-- Host: 127.0.0.1
+-- Generation Time: Jul 04, 2022 at 03:53 AM
+-- Server version: 10.4.22-MariaDB
+-- PHP Version: 8.1.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `banco_figma_gian`
+-- Database: `banco_figma_gian`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `cardapio`
+-- Table structure for table `cardapio`
 --
 
 CREATE TABLE `cardapio` (
@@ -35,7 +35,7 @@ CREATE TABLE `cardapio` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Extraindo dados da tabela `cardapio`
+-- Dumping data for table `cardapio`
 --
 
 INSERT INTO `cardapio` (`id_produto`, `nome_produto`, `preco_produto`, `categoria`) VALUES
@@ -53,7 +53,7 @@ INSERT INTO `cardapio` (`id_produto`, `nome_produto`, `preco_produto`, `categori
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `itens_pedido`
+-- Table structure for table `itens_pedido`
 --
 
 CREATE TABLE `itens_pedido` (
@@ -66,7 +66,7 @@ CREATE TABLE `itens_pedido` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Extraindo dados da tabela `itens_pedido`
+-- Dumping data for table `itens_pedido`
 --
 
 INSERT INTO `itens_pedido` (`id_nf`, `id_item`, `cod_prod`, `valor_unit`, `quantidade`, `desconto`) VALUES
@@ -98,7 +98,7 @@ INSERT INTO `itens_pedido` (`id_nf`, `id_item`, `cod_prod`, `valor_unit`, `quant
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `pedido`
+-- Table structure for table `pedido`
 --
 
 CREATE TABLE `pedido` (
@@ -107,7 +107,7 @@ CREATE TABLE `pedido` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Extraindo dados da tabela `pedido`
+-- Dumping data for table `pedido`
 --
 
 INSERT INTO `pedido` (`id_pedido`, `id_usuario`) VALUES
@@ -125,7 +125,7 @@ INSERT INTO `pedido` (`id_pedido`, `id_usuario`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `usuario`
+-- Table structure for table `usuario`
 --
 
 CREATE TABLE `usuario` (
@@ -134,69 +134,74 @@ CREATE TABLE `usuario` (
   `telefone_usuario` varchar(100) DEFAULT NULL,
   `email_usuario` varchar(255) DEFAULT NULL,
   `endereco_usuario` varchar(255) DEFAULT NULL,
-  `senha_usuario` text DEFAULT NULL
+  `senha_usuario` text DEFAULT NULL,
+  `data_cadastro` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Extraindo dados da tabela `usuario`
+-- Dumping data for table `usuario`
 --
 
-INSERT INTO `usuario` (`id_usuario`, `nome_usuario`, `telefone_usuario`, `email_usuario`, `endereco_usuario`, `senha_usuario`) VALUES
-(1, 'Louis Langley', '(03) 2319 7278', 'in.consectetuer.ipsum@protonmail.com', 'Ap #742-1982 Ac Street', 'Sed'),
-(2, 'Aidan Santos', '(02) 6247 2366', 'ornare@icloud.net', 'P.O. Box 206, 8271 Sem Rd.', 'sit'),
-(3, 'John Vincent', '(02) 6455 0516', 'amet.risus@outlook.com', 'Ap #674-1157 Metus. Ave', 'risus'),
-(4, 'Macey Salazar', '(03) 7860 4371', 'ut.molestie@aol.org', '184-5277 Aliquet St.', 'pulvinar'),
-(5, 'Kermit Hubbard', '(04) 0681 5466', 'mauris.blandit@google.couk', '1308 Ultricies Rd.', 'cursus.'),
-(6, 'Cade Beasley', '(04) 6996 5484', 'urna@google.org', 'Ap #506-1826 Semper Avenue', 'Cras'),
-(7, 'Malachi Stephenson', '(02) 2442 6683', 'nec@icloud.ca', 'Ap #319-2131 At, St.', 'nibh'),
-(8, 'Oprah Mercado', '(06) 1554 5708', 'nec.ante.maecenas@google.ca', 'Ap #565-5856 Parturient Street', 'Morbi'),
-(9, 'Lavinia Bailey', '(02) 5541 5388', 'odio@yahoo.org', '964-8725 Mauris, Avenue', 'quam'),
-(10, 'Trevor Mathis', '(05) 7522 3513', 'lorem.semper@hotmail.couk', 'Ap #442-343 Risus. St.', 'Duis'),
-(11, 'Gian Fiamoncini', '4654654', 'carlo.gcf04@gmail.com', 'Rua dos Timbiras', '123');
+INSERT INTO `usuario` (`id_usuario`, `nome_usuario`, `telefone_usuario`, `email_usuario`, `endereco_usuario`, `senha_usuario`, `data_cadastro`) VALUES
+(1, 'Louis Langley', '(03) 2319 7278', 'in.consectetuer.ipsum@protonmail.com', 'Ap #742-1982 Ac Street', 'Sed', NULL),
+(2, 'Aidan Santos', '(02) 6247 2366', 'ornare@icloud.net', 'P.O. Box 206, 8271 Sem Rd.', 'sit', NULL),
+(3, 'John Vincent', '(02) 6455 0516', 'amet.risus@outlook.com', 'Ap #674-1157 Metus. Ave', 'risus', NULL),
+(4, 'Macey Salazar', '(03) 7860 4371', 'ut.molestie@aol.org', '184-5277 Aliquet St.', 'pulvinar', NULL),
+(5, 'Kermit Hubbard', '(04) 0681 5466', 'mauris.blandit@google.couk', '1308 Ultricies Rd.', 'cursus.', NULL),
+(6, 'Cade Beasley', '(04) 6996 5484', 'urna@google.org', 'Ap #506-1826 Semper Avenue', 'Cras', NULL),
+(7, 'Malachi Stephenson', '(02) 2442 6683', 'nec@icloud.ca', 'Ap #319-2131 At, St.', 'nibh', NULL),
+(8, 'Oprah Mercado', '(06) 1554 5708', 'nec.ante.maecenas@google.ca', 'Ap #565-5856 Parturient Street', 'Morbi', NULL),
+(9, 'Lavinia Bailey', '(02) 5541 5388', 'odio@yahoo.org', '964-8725 Mauris, Avenue', 'quam', NULL),
+(10, 'Trevor Mathis', '(05) 7522 3513', 'lorem.semper@hotmail.couk', 'Ap #442-343 Risus. St.', 'Duis', NULL),
+(20, 'Gian Fiamoncini', '(47) 98809-6059', 'carlo@gmail.com', 'Rua dos Timbiras, 152', 'Gcf694@', NULL),
+(21, 'Felipe', '(47) 98549-8469', 'felipe@gmail.com', 'Rua Santos Dumont', 'Felipe@123', '2022-07-03 20:10:27'),
+(24, 'Alvacir', '(47) 98406-3202', 'fiamoncini.a@gmail.com', 'Rua dos Timbiras', 'Alvacir@123', '2022-07-03 21:29:31'),
+(28, 'aaaasdasdasd', '(54) 94456-5464', 'adsasdasd@gmail.com', 'Rua Santos Dumont', 'Asdsd@123', '2022-07-03 22:21:12'),
+(29, 'Teste', '(47) 95465-4847', 'ligul4@gmail.com', 'n cykr4sn jcy5r', 'Akjtdg4165@', '2022-07-03 22:49:54');
 
 --
--- Índices para tabelas despejadas
+-- Indexes for dumped tables
 --
 
 --
--- Índices para tabela `cardapio`
+-- Indexes for table `cardapio`
 --
 ALTER TABLE `cardapio`
   ADD PRIMARY KEY (`id_produto`);
 
 --
--- Índices para tabela `pedido`
+-- Indexes for table `pedido`
 --
 ALTER TABLE `pedido`
   ADD PRIMARY KEY (`id_pedido`);
 
 --
--- Índices para tabela `usuario`
+-- Indexes for table `usuario`
 --
 ALTER TABLE `usuario`
   ADD PRIMARY KEY (`id_usuario`);
 
 --
--- AUTO_INCREMENT de tabelas despejadas
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT de tabela `cardapio`
+-- AUTO_INCREMENT for table `cardapio`
 --
 ALTER TABLE `cardapio`
   MODIFY `id_produto` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
--- AUTO_INCREMENT de tabela `pedido`
+-- AUTO_INCREMENT for table `pedido`
 --
 ALTER TABLE `pedido`
   MODIFY `id_pedido` int(8) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
--- AUTO_INCREMENT de tabela `usuario`
+-- AUTO_INCREMENT for table `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id_usuario` mediumint(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id_usuario` mediumint(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
