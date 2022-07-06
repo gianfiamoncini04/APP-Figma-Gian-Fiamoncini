@@ -674,6 +674,7 @@
 /* Início botões e textos da tela inicio */
 
 #linhas_inicio{
+    font-family: 'Kaushan Script', cursive;
     position: fixed;
     display: flex;
     flex-direction: column;
