@@ -858,7 +858,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    top: 15%;
+    top: 10%;
     left: 0;
     right: 0;
     width: 100%;
@@ -871,7 +871,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 460px;
+    gap: 292px;
 }
 
 .pizza_calabresa{
@@ -914,7 +914,7 @@
     width: 95px;
     height: 22px;
     left: 70px;
-    top: 1120px;
+    top: 982px;
     gap: 100px;
 }
 
@@ -938,7 +938,7 @@
     width: 350px;
     height: 300px;
     left: 70px;
-    top: 1160px;
+    top: 1043px;
     gap: 100px;
 }
 
@@ -947,7 +947,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 460px;
+    gap: 292px;
 }
 
 .pizza_frango{
@@ -990,7 +990,7 @@
     width: 300px;
     height: 22px;
     left: 550px;
-    top: 1120px;
+    top: 982px;
     gap: 100px;
 }
 
@@ -1014,7 +1014,7 @@
     width: 350px;
     height: 300px;
     left: 550px;
-    top: 1160px;
+    top: 1043px;
     gap: 100px;
 }
 
@@ -1024,7 +1024,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    top: 15%;
+    top: 12%;
     left: 0;
     right: 0;
     width: 100%;
@@ -1040,98 +1040,6 @@
     gap: 460px;
 }
 
-.retangulo_calabresa{
-    position: absolute;
-    width: 250px;
-    height: 110px;
-    left: 135px;
-    top: 580px;
-    border: 2pt solid #000000;
-    box-sizing: border-box;
-}
-
-.menus_calabresa{
-    position: absolute;
-    width: 18.03px;
-    height: 0px;
-    left: 180px;
-    top: 630px;
-    border: 2px solid #000000;
-}
-
-.line2_calabresa{
-    position: absolute;
-    width: 18.03px;
-    height: 0px;
-    left: 315px;
-    top: 630px;
-    border: 2px solid #000000;
-}
-
-.line3_calabresa{
-    position: absolute;
-    width: 18.03px;
-    height: 0px;
-    left: 315px;
-    top: 630px;
-    border: 2px solid #000000;
-    transform: matrix(-0.01, -1, 1, -0.01, 0, 0);
-}
-
-.zero_calabresa{
-    position: absolute;
-    width: 32px;
-    height: 40px;
-    left: 240px;
-    top: 615px;
-}
-
-.retangulo_vegana{
-    position: absolute;
-    width: 250px;
-    height: 110px;
-    left: 135px;
-    top: 1320px;
-    border: 2pt solid #000000;
-    box-sizing: border-box;
-}
-
-.menus_vegana{
-    position: absolute;
-    width: 18.03px;
-    height: 0px;
-    left: 180px;
-    top: 1375px;
-    border: 2px solid #000000;
-}
-
-.line2_vegana{
-    position: absolute;
-    width: 15px;
-    height: 0px;
-    left: 310px;
-    top: 1375px;
-    border: 2px solid #000000;
-}
-
-.line3_vegana{
-    position: absolute;
-    width: 15.03px;
-    height: 0px;
-    left: 310px;
-    top: 1375px;
-    border: 2px solid #000000;
-    transform: matrix(-0.01, -1, 1, -0.01, 0, 0);
-}
-
-.zero_vegana{
-    position: absolute;
-    width: 32px;
-    height: 40px;
-    left: 240px;
-    top: 1355px;
-}
-
 #coluna_2_coletores{
     display: flex;
     flex-direction: column;
@@ -1140,97 +1048,62 @@
     gap: 460px;
 }
 
-.retangulo_frango{
+#pedido{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    top: 74%;
+    left: 17%;
     position: absolute;
-    width: 250px;
-    height: 110px;
-    left: 600px;
-    top: 870px;
-    border: 2pt solid #000000;
-    box-sizing: border-box;
+    gap: 92px;
 }
 
-.menus_frango{
-    position: absolute;
-    width: 18.03px;
-    height: 0px;
-    left: 650px;
-    top: 920px;
-    border: 2px solid #000000;
+#tamanho{
+    width: 260px;
+    height: 50px;
+    font-size: 30pt;
 }
 
-.line2_frango{
-    position: absolute;
-    width: 15px;
-    height: 0px;
-    left: 790px;
-    top: 920px;
-    border: 2px solid #000000;
+#sabor{
+    width: 260px;
+    height: 50px;
+    font-size: 30pt;
 }
 
-.line3_frango{
-    position: absolute;
-    width: 15.03px;
-    height: 0px;
-    left: 790px;
-    top: 920px;
-    border: 2px solid #000000;
-    transform: matrix(-0.01, -1, 1, -0.01, 0, 0);
+option{
+    font-size: 10pt;
 }
 
-.zero_frango{
+
+#btn_div_comfirma{
+    display: flex;
     position: absolute;
-    width: 32px;
-    height: 40px;
-    left: 710px;
-    top: 900px;
 }
 
-.retangulo_egg{
+
+.btn_comfirma{
+    border: none;
+    border-radius: 28pt;
+    background-color: #0f6fd3;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
     position: absolute;
-    width: 250px;
-    height: 110px;
-    left: 600px;
-    top: 1615px;
-    border: 2pt solid #000000;
-    box-sizing: border-box;
+    width: 471px;
+    height: 80px;
+    left: 240px;
+    right: 0;
+    top: 1685px;
+    font-size: 50px;
+    color: white;
 }
 
-.menus_egg{
-    position: absolute;
-    width: 18.03px;
-    height: 0px;
-    left: 650px;
-    top: 1670px;
-    border: 2px solid #000000;
-}
-
-.line2_egg{
-    position: absolute;
-    width: 15px;
-    height: 0px;
-    left: 790px;
-    top: 1670px;
-    border: 2px solid #000000;
-}
-
-.line3_egg{
-    position: absolute;
-    width: 15.03px;
-    height: 0px;
-    left: 790px;
-    top: 1670px;
-    border: 2px solid #000000;
-    transform: matrix(-0.01, -1, 1, -0.01, 0, 0);
-}
-
-.zero_egg{
-    position: absolute;
-    width: 32px;
-    height: 40px;
-    left: 710px;
-    top: 1650px;
-}
 
 /* termino botões e textos da tela sabores */
 

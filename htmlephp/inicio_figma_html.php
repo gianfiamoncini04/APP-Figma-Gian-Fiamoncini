@@ -34,32 +34,33 @@
 
     <!--  Inicio botões e textos da tela inicio  -->
 
+    <form action="../htmlephp/pedir.php" method="get">
+        <div id="linhas_inicio">
+            <div id="linha_1_inicio">
+                <p class="texto_pequena">Pizza Pequena R$ 35,00 (Dois Sabores)</p>
+                <img class="pizza_pequena" src="../imgs/pizza_pequena.png" alt="Pizza Pequena">
+                <button class="botao_pequena" value="pizza_pequena"> <a href="../htmlephp/sabores_figma_html.php" style="text-decoration: wavy; color: white;">SELECIONAR</a></button>
+            </div>
 
-    <div id="linhas_inicio">
-        <div id="linha_1_inicio">
-            <p class="texto_pequena">Pizza Pequena R$ 35,00 (Dois Sabores)</p>
-            <img class="pizza_pequena" src="../imgs/pizza_pequena.png" alt="Pizza Pequena">
-            <button class="botao_pequena"> <a href="../htmlephp/sabores_figma_html.php" style="text-decoration: wavy; color: white;">SELECIONAR</a></button>
-        </div>
+            <div id="linha_2_inicio">
+                <p class="texto_media">Pizza Média R$ 45,00 (Três Sabores)</p>
+                <img class="pizza_media" src="../imgs/pizza_media.png" alt="Pizza Média">
+                <button class="botao_media" value="pizza_media"> <a href="../htmlephp/sabores_figma_html.php" style="text-decoration: wavy; color: white;">SELECIONAR</a></button>
+            </div>
 
-        <div id="linha_2_inicio">
-            <p class="texto_media">Pizza Média R$ 45,00 (Três Sabores)</p>
-            <img class="pizza_media" src="../imgs/pizza_media.png" alt="Pizza Média">
-            <button class="botao_media"> <a href="../htmlephp/sabores_figma_html.php" style="text-decoration: wavy; color: white;">SELECIONAR</a></button>
-        </div>
+            <div id="linha_3_inicio">
+                <p class="texto_grande">Pizza Grande R$ 60,00 (Quatro Sabores)</p>
+                <img class="pizza_grande" src="../imgs/pizza_grande.png" alt="Pizza Grande">
+                <button class="botao_grande" value="pizza_grande"> <a href="../htmlephp/sabores_figma_html.php" style="text-decoration: wavy; color: white;">SELECIONAR</a></button>
+            </div>
 
-        <div id="linha_3_inicio">
-            <p class="texto_grande">Pizza Grande R$ 60,00 (Quatro Sabores)</p>
-            <img class="pizza_grande" src="../imgs/pizza_grande.png" alt="Pizza Grande">
-            <button class="botao_grande"> <a href="../htmlephp/sabores_figma_html.php" style="text-decoration: wavy; color: white;">SELECIONAR</a></button>
+            <div id="linha_4_inicio">
+                <p class="texto_gigante">Pizza Gigante R$ 75,00 (Quatro Sabores)</p>
+                <img class="pizza_gigante" src="../imgs/pizza_gigante.png" alt="Pizza Gigante">
+                <button class="botao_gigante" value="pizza_gigante"> <a href="../htmlephp/sabores_figma_html.php" style="text-decoration: wavy; color: white;">SELECIONAR</a></button>
+            </div>
         </div>
-
-        <div id="linha_4_inicio">
-            <p class="texto_gigante">Pizza Gigante R$ 75,00 (Quatro Sabores)</p>
-            <img class="pizza_gigante" src="../imgs/pizza_gigante.png" alt="Pizza Gigante">
-            <button class="botao_gigante"> <a href="../htmlephp/sabores_figma_html.php" style="text-decoration: wavy; color: white;">SELECIONAR</a></button>
-        </div>
-    </div>
+    </form>
 
     <!--  Termino botões e textos da tela inicio  -->
 

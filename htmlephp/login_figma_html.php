@@ -24,6 +24,7 @@ session_start()
 
     <link rel="icon" type="image/x-icon" href="../imgs/logoempresa.png">
 
+
 </head>
 
 <body>

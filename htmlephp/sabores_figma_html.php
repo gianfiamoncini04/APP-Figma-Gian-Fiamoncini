@@ -68,35 +68,28 @@
         </div>
     </div>
 
-    <div id="coletores">
-        <img id="coluna_1_coletores">
-        <img class="retangulo_calabresa" src="../imgs/retangulo_coletor.png">
-        <img class="menus_calabresa" src="../imgs/line 1.png" alt="-">
-        <img class="line2_calabresa" src="../imgs/line2.png" alt="+">
-        <img class="line3_calabresa" src="../imgs/line3.png">
-        <img class="zero_calabresa" src="../imgs/0.png" alt="0">
+    <form action="../htmlephp/pedir.php" method="post">
+        <div id="pedido">
+            <select name="tamanho" id="tamanho">
+                <option>Tamanho</option>
+                <option value="pequena">Pequena</option>
+                <option value="media">Média</option>
+                <option value="grande">Grande</option>
+                <option value="gigante">Gigante</option>
+            </select>
+            <select name="sabor" id="sabor">
+                <option>Sabor</option>
+                <option value="calabresa">Calabresa</option>
+                <option value="vegana">Vegana</option>
+                <option value="frango">Frango</option>
+                <option value="egg">Egg</option>
+            </select>
+        </div>
+        <div id="btn_div_comfirma">
+            <button type="submit" class="btn_comfirma">Comfirmar</button>
+        </div>
+    </form>
 
-        <img class="retangulo_vegana" src="../imgs/retangulo_coletor.png">
-        <img class="menus_vegana" src="../imgs/line 1.png" alt="-">
-        <img class="line2_vegana" src="../imgs/line2.png" alt="+">
-        <img class="line3_vegana" src="../imgs/line3.png">
-        <img class="zero_vegana" src="../imgs/0.png" alt="0">
-    </div>
-
-    <div id="coluna_2_coletores">
-        <img class="retangulo_frango" src="../imgs/retangulo_coletor.png">
-        <img class="menus_frango" src="../imgs/line 1.png" alt="-">
-        <img class="line2_frango" src="../imgs/line2.png" alt="+">
-        <img class="line3_frango" src="../imgs/line3.png">
-        <img class="zero_frango" src="../imgs/0.png" alt="0">
-
-        <img class="retangulo_egg" src="../imgs/retangulo_coletor.png">
-        <img class="menus_egg" src="../imgs/line 1.png" alt="-">
-        <img class="line2_egg" src="../imgs/line2.png" alt="+">
-        <img class="line3_egg" src="../imgs/line3.png">
-        <img class="zero_egg" src="../imgs/0.png" alt="0">
-    </div>
-    </div>
 
     <!-- /* termino botões e textos da tela sabores */ -->
 
