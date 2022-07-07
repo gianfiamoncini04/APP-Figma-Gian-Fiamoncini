@@ -1,3 +1,9 @@
+<?php
+
+error_reporting(E_ERROR | E_PARSE);
+session_start()
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -36,8 +42,24 @@
 
     <!-- /* Inicio botões e textos da tela pedidos */ -->
 
+    <?php
+    if ($_SESSION['pedido']) :
+    ?>
+        <div id="pedido-session">
+            <p>Seu pedido está sendo preparado</p>
+            <p>40 min - 50min</p>
+            <p><?php echo date('d-m-Y'); ?></p><br><br>
+            <p>OBRIGADO POR CONFIAR EM NÓS</p>
 
-    <div id="barra1">
+
+        </div>
+    <?php
+    endif;
+    unset($_SESSION['pedido']);
+    ?>
+
+
+    <!-- <div id="barra1">
         <p class="texto1_pedido">VOCÊ NÃO PEDIU NADA AINDA!</p>
     </div>
 
@@ -50,7 +72,7 @@
             <p class="texto2_pedido">PARA FAZER UM PEDIDO</p>
             <button class="botao_pedidos">CLIQUE AQUI</button>
         </div>
-    </a>
+    </a> -->
 
     <!-- /* termino botões e textos da tela pedidos */ -->
 

@@ -69,7 +69,7 @@ session_start()
                 </div>
                 <div id="senha_struct_login">
                     <img src="../imgs/icon_senha.png" class="icon_senha">
-                    <input type="text" name="senha_usuario_login" id="senha_usuario_login" placeholder="Senha:"><br><br>
+                    <input type="password" name="senha_usuario_login" id="senha_usuario_login" placeholder="Senha:"><br><br>
                     <small id="textSenha_login"></small>
                 </div>
             </div>
